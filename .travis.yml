@@ -11,6 +11,9 @@ otp_release:
   - 20.3.8.7
   - 20.3.8.8
 
+before_scrpt:
+  - kerl list installations
+
 script:
   - ./rebar3 as prod compile
   # - ./rebar3 as check xref
